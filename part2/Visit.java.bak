@@ -1,0 +1,10 @@
+class Visit {
+	
+	private waitTime;
+    
+    public Visit(int atimeSpent){
+        // A patient is automatically assigned a wait time
+		
+		
+    }
+}
