@@ -15,10 +15,11 @@ public class create {
 
     try  {
 		
-		FileWriter writer = new FileWriter("test.csv", true);
+		FileWriter writer = new FileWriter("test2.txt", true);
 		
 		// Create a Scanner object; we will do this for every entry
-		Scanner myObj = new Scanner(System.in);  
+		Scanner myObj = new Scanner(System.in);
+		System.out.println("New patient");		
 		System.out.println("Enter patient ID strating with ID ie: ID1234");
 		
 		// Read user ID
@@ -73,6 +74,7 @@ public class create {
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		writer.write(formatter.format(date));
 		
+		writer.write(",");
 	    writer.write("\n");
 		System.out.println("user has been created");
 		writer.close();

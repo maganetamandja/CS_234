@@ -74,6 +74,7 @@ public class create {
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		writer.write(formatter.format(date));
 		
+		writer.write(",");
 	    writer.write("\n");
 		System.out.println("user has been created");
 		writer.close();
