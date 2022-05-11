@@ -1,0 +1,13 @@
+*******************Patients List**********************
+906542 | maddy | 04/08/99 | male | engineer | 98.09 | 300 | arm
+67590 | Kolbe | 03/07/99 | male | Soldier | 100 | 897 | shoulder
+6571 | conor | 06/08/98 | male | cavalier | 76.09 | 500 | shoulder
+8989 | James | 07/08/87 | male | unemployed | 89.9 | 600 | knee
+2093 | kamy | 03/07/99 | female | retired | 98.09 | 300 | shoulder
+*******************Nurse List**********************
+987645 | marta | 21/10/89 | female | nurse
+7812 | Mia | 17/08/99 | female | nurse
+2198 | Cole | 17/08/99 | male | nurse
+3453 | Carla | 17/09/89 | female | nurse
+76908 | Camy | 17/09/89 | female | nurse
+76543 | Sam | 17/09/89 | male | nurse

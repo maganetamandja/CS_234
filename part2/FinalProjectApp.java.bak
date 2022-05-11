@@ -1,0 +1,74 @@
+import java.util.*;
+import java.awt.*; 
+import javax.swing.*;
+import java.awt.event.*;
+
+public class finalProjectApp {
+	
+		// the catalog is contained inside the main app
+		
+		//patient map
+		HashMap<int, Patient> PatientCatalog = new HashMap<int, Patient>();
+		
+		//Nurse map
+		HashMap<int, Nurse> NurseCatalog = new HashMap<int, Nurse>();
+		
+		//provide methods to add values 
+		
+		public void addNurse(int akey, Nurse aNurse){
+			NurseCatalog.put(akey, aNurse);
+		}
+		
+	//	public void addPatient(int akey, Patient aPatient){
+		//	PatientCatalog.put(akey, aPatient);
+		//}
+	
+	//load an image
+	static ImageIcon img = new ImageIcon("bgimage.jpg");
+	public static void main(String[] args){
+		
+		//The main frame
+		JFrame frame = new JFrame("Main window");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//create a menubar
+		JMenuBar mb = new JMenuBar();
+		//create a menu 
+		JMenu x = new JMenu("Menu");
+		
+		//menu items
+		//menu create Nurse
+		JMenuItem createNurse = new JMenuItem("create Nurse");
+		createNurse.setMnemonic(KeyEvent.VK_C);
+		
+		//Here is where the action happen
+		create.addActionListener(new ActionListener(){
+		 public void actionPerformed(ActionEvent e){
+			 System.out.println("create Nurse window");
+			 newNurse anewNurse = new newNurse();
+			 //create a nurse variable
+			 Nurse tempNurse = new Nurse();
+ /*this return a nurse*/tempNurse = anewNurse.creation();
+			 addNurse(tempNurse.getID(), tempNurse);
+			 
+		 }
+	 });
+		
+		//add menu items to menu
+	
+		x.add(createNurse);
+		
+		//add menu to menu bar
+	
+		mb.add(x);
+		
+		//add menubar to frame.
+	
+		frame.setJMenuBar(mb);
+		
+		//add image
+		
+		frame.add(new JLabel(img));
+
+		
+		}
+	}

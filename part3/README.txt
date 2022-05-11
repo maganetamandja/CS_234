@@ -2,20 +2,17 @@ Compiling instruction
 
 1-
 
-javac window.java
+javac FinalProjectApp.java
 
 this will generate class files
+Please make sure that anonymous inner classes are generated and match the one in the jar package.
 
 2-
-jar cmf MANIFEST.MF execu.jar *.class bgimage.jpg test2.txt
-
-this will put all the files 
+jar cmf MANIFEST.MF myApp.jar *
+this will put all the files into the jar package
 
 3-
-java -jar execu.jar
+java -jar myApp.jar
 
 this will run the app
 
-IMPORTANT NOTE:
-Due to time restriction the catalog has not been integrated into the main program but still remain
- a fully developped algorythm.
